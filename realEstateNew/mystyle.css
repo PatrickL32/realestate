@@ -1,9 +1,26 @@
 /*global*//*global*/
+
+*{/*selecting all the HMTL elements*/
+    margin:0;
+    padding:0;
+
+}
+
 body{
     font-family:arial;
+
 }
+h2{ 
+text-align:center;
+margin:20xp;
+}
+
+h3{ margin:20xp}
 p{
-    line-height:2;
+    line-height:1.5;
+    text-align:center;
+}
+main{ margin:30px;
 }
 h1{
     text-align:center;
@@ -18,7 +35,7 @@ img{
 
 }
 /*utilities*/
-.contauner{
+.container{
     width:100%;
     margin-left: auto;
     margin-right: auto;
@@ -46,8 +63,11 @@ img{
 }
 
 .btn-info {
-    background-color:none;
-    color: white;
+    display: block;
+    background-color: orange;
+    width:100%;
+    text-align:center;
+    padding: 5px;
 }
 
 
@@ -61,9 +81,31 @@ img{
 }
 
 .about-container{
-    display:flex;}
+    display:flex;
+flex-direction:row;
+Justify-content:space-between;
+}
+@media(max-width:768px){
+    .about-container{
+    flex-direction:column;
 
+    text-align:center;
 
+    }
+
+}
+
+.house-item{
+    margin:30px;
+}
+
+.icons-containerli{
+    display:flex;
+    width:30%;
+}
+.houses-container{
+    display: flex;
+}
 .menu-bar{
     display:flex;
     justify-content:space-around;
@@ -72,8 +114,27 @@ img{
 
 .footer-style{
     background-color:gray;
+    background-image:url(./img/encuentra.jpg);
     color:white;
-    height: 125px;
+    height: 100px;
+    align-items:center;
     text-align:center;
 }
 
+/* Form */
+.personalinfo-container{
+    text-align: center;
+}
+
+.container-main-container{
+    width: 60%;
+}
+
+form {
+    background-color: lightgray;
+    padding: 18px;
+}
+
+.section-container {
+    margin-bottom: 18px;
+}
